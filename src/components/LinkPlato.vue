@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="row">
         <div v-if="links.found === 0">
             <div class="card">
                 <div class="card-body">
@@ -7,14 +7,13 @@
                 </div>
             </div>
         </div>
-        <div class="row"
+        <div class="col-md-4"
              v-bind:key="link.id"
              v-for="link in links.items">
-            <div class="col-md-12">
+
                 <LinkCard
                         v-bind:link="link"
                         v-on:del-link="$emit('del-link', link.id)"/>
-            </div>
         </div>
     </div>
 </template>

@@ -5,11 +5,10 @@
                 <LinkNew v-on:add-link="createLink">
                 </LinkNew>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-8 col-sm-12">
                 <LinkPlato v-bind:links="links"
                            v-on:del-link="deleteLink"></LinkPlato>
             </div>
-            <div class="col-md-4 col-sm-12"></div>
         </div>
     </div>
 </template>
@@ -19,7 +18,7 @@
     import LinkPlato from '../components/LinkPlato.vue';
     import axios from 'axios';
 
-    const linksAPIAddress = 'http://127.0.0.1/api/v1';
+    const linksAPIAddress = 'https://127.0.0.1/api/v1';
 
     export default {
         components: {
