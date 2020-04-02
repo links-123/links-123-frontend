@@ -1,6 +1,5 @@
 <template>
     <div class="card">
-
         <!-- Named link -->
         <div v-if="link.name !== ''" class="card-body">
             <h5 class="card-title">
